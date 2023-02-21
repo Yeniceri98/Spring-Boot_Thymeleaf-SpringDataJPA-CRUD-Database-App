@@ -7,9 +7,11 @@
 </head>
 <body>
 
+    <h2>Save Employee</h2><br>
+
     <form
             action="#"
-            th:action="@{employees/save}"
+            th:action="@{/employees/save}"
             th:object="${employee}"
             method="POST">
 
@@ -18,7 +20,7 @@
         <input type="text" th:field="*{email}" placeholder="Email" class="form-control mb-4 col-4">
 
         <button type="submit" class="btn btn-info col-2">Save</button>
-    </form><hr><hr>
+    </form><hr>
 
     <a th:href="@{/employees/list}">Back to Employees List</a>
 
